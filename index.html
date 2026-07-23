@@ -837,7 +837,7 @@ html, body {
       <span>Mira la regla debajo de cada objeto. Escribe cuántos centímetros (cm) mide. ¡Empieza siempre desde el cero!</span>
     </div>
 
-    <!-- Object 1: Lápiz (7 cm) -->
+    <!-- Object 1: Lápiz (5 cm) -->
     <div class="object-row">
       <div class="object-card" id="obj-1">
         <div class="obj-name">✏️ Lápiz de escribir</div>
@@ -855,23 +855,25 @@ html, body {
               <line x1="140" y1="25" x2="140" y2="32" stroke="#2D1B69" stroke-width="1"/>
               <line x1="160" y1="25" x2="160" y2="32" stroke="#2D1B69" stroke-width="1"/>
               <line x1="180" y1="25" x2="180" y2="35" stroke="#2D1B69" stroke-width="1.5"/>
-              <text x="20" y="44">1</text>
-              <text x="60" y="44">2</text>
-              <text x="120" y="44">4</text>
-              <text x="180" y="44">6</text>
               <text x="0" y="44">0</text>
+              <text x="20" y="44">1</text>
+              <text x="40" y="44">2</text>
+              <text x="60" y="44">3</text>
+              <text x="80" y="44">4</text>
+              <text x="100" y="44">5</text>
+              <text x="120" y="44">6</text>
             </g>
-            <!-- Pencil (0 to 7 cm = 0 to 140px) -->
+            <!-- Pencil (0 to 5 cm = 0 to 100px) -->
             <g transform="translate(0,5)">
-              <polygon points="0,8 120,8 120,16 0,16" fill="#FF6B35" stroke="#2D1B69" stroke-width="1.5"/>
-              <polygon points="120,8 140,12 120,16" fill="#FFD7B5" stroke="#2D1B69" stroke-width="1.5"/>
-              <polygon points="135,11 140,12 135,13" fill="#2D1B69"/>
+              <polygon points="0,8 80,8 80,16 0,16" fill="#FF6B35" stroke="#2D1B69" stroke-width="1.5"/>
+              <polygon points="80,8 100,12 80,16" fill="#FFD7B5" stroke="#2D1B69" stroke-width="1.5"/>
+              <polygon points="95,11 100,12 95,13" fill="#2D1B69"/>
               <rect x="-8" y="8" width="8" height="8" fill="#FF6B35" stroke="#2D1B69" stroke-width="1.5"/>
             </g>
           </svg>
         </div>
         <div>
-          <input type="number" min="0" max="30" placeholder="?" id="input-1" oninput="checkRuler(1, 7)" onblur="checkRuler(1, 7)">
+          <input type="number" min="0" max="30" placeholder="?" id="input-1" oninput="checkRuler(1, 5)" onblur="checkRuler(1, 5)">
           <span class="check-mark">✅</span> cm
         </div>
       </div>
